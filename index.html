@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="configuration">
+        <div class="configuration-table">
+            <div class="configuration-variants">
+                <div class="configuration-variants-name">
+                    <h3>vCPU</h3>
+                </div>
+                <div class="configuration-variants-params">
+                    <p>Количество ядер частотой
+                        2,6 ГГц" - шт. </p>
+                    <div class="configuration-variants-params__preset">
+                        <button class='plus-button'>+</button>
+                        <input type='text' value='0' class="configuration-variants-params__value">
+                        <button class='minus-button'>-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="configuration-variants">
+                <div class="configuration-variants-name">
+                    <h3>Оперативная память</h3>
+                </div>
+                <div class="configuration-variants-params">
+                    <p>vRAM - Гб </p>
+                    <div class="configuration-variants-params__preset">
+                        <button class='plus-button'>+</button>
+                        <input type='text' value='0' class="configuration-variants-params__value">
+                        <button class='minus-button'>-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="configuration-variants">
+                <div class="configuration-variants-name">
+                    <h3>Сетевая инфраструктура</h3>
+                </div>
+                <div class="configuration-variants-params">
+                    <p>Доступные для использования IPv4 - шт.</p>
+                    <div class="configuration-variants-params__preset">
+                        <button class='plus-button'>+</button>
+                        <input type='text' value='0' class="configuration-variants-params__value">
+                        <button class='minus-button'>-</button>
+                    </div>
+                </div>
+                <div class="configuration-variants-params">
+                    <p>Количество "серых" сетей (VLAN) - шт.</p>
+                    <div class="configuration-variants-params__preset">
+                        <button class='plus-button'>+</button>
+                        <input type='text' value='0' class="configuration-variants-params__value">
+                        <button class='minus-button'>-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="configuration-variants">
+                <div class="configuration-variants-name">
+                    <h3>Система хранения данных</h3>
+                </div>
+                <div class="configuration-variants-params">
+                    <p>Silver (HDD 7K) - Гб</p>
+                    <div class="configuration-variants-params__preset">
+                        <button class='plus-button'>+</button>
+                        <input type='text' value='0' class="configuration-variants-params__value">
+                        <button class='minus-button'>-</button>
+                    </div>
+                </div>
+                <div class="configuration-variants-params">
+                    <p>Gold (HDD 15K) - Гб</p>
+                    <div class="configuration-variants-params__preset">
+                        <button class='plus-button'>+</button>
+                        <input type='text' value='0' class="configuration-variants-params__value">
+                        <button class='minus-button'>-</button>
+                    </div>
+                </div>
+                <div class="configuration-variants-params">
+                    <p>Platinum (NVMe SSD) - Гб</p>
+                    <div class="configuration-variants-params__preset">
+                        <button class='plus-button'>+</button>
+                        <input type='text' value='0' class="configuration-variants-params__value">
+                        <button class='minus-button'>-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="configuration-variants">
+                <div class="configuration-variants-name">
+                    <h3>Лицензии Microsoft</h3>
+                </div>
+                <div class="configuration-variants-params">
+                    <p>RDS - количество - шт.</p>
+                    <div class="configuration-variants-params__preset">
+                        <button class='plus-button'>+</button>
+                        <input type='text' value='0' class="configuration-variants-params__value">
+                        <button class='minus-button'>-</button>
+                    </div>
+                </div>
+                <div class="configuration-variants-params">
+                    <p>SQL Server Standard (core) - шт.</p>
+                    <div class="configuration-variants-params__preset">
+                        <button class='plus-button'>+</button>
+                        <input type='text' value='0' class="configuration-variants-params__value">
+                        <button class='minus-button'>-</button>
+                    </div>
+                </div>
+                <div class="configuration-variants-params">
+                    <p>SQL Server Enterprise (core) -шт.</p>
+                    <div class="configuration-variants-params__preset">
+                        <button class='plus-button'>+</button>
+                        <input type='text' value='0' class="configuration-variants-params__value">
+                        <button class='minus-button'>-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="configuration-variants">
+                <div class="configuration-variants-name">
+                    <h3>Безопасность и IT услуги</h3>
+                </div>
+                <div class="configuration-variants-params">
+                    <p>BaaS (BackUp as a Service) - Гб</p>
+                    <div class="configuration-variants-params__preset">
+                        <button class='plus-button'>+</button>
+                        <input type='text' value='0' class="configuration-variants-params__value">
+                        <button class='minus-button'>-</button>
+                    </div>
+                </div>
+                <div class="configuration-variants-params">
+                    <label for="secure">
+                        Комплексное устройство защиты информации*
+                    </label>
+                    <div class="configuration-variants-params__preset"></div>
+                    <input type="checkbox" id='secure' checked>
+                </div>
+                <label for="it-service">
+                    <p>IT услуги**</p>
+                </label>
+                <div class="configuration-variants-params__preset">
+                    <input type="checkbox" id='it-service'>
+                </div>
+            </div>
+        </div>
+
+        <div class="configuration-result">
+            <div class="configuration-result-header">
+                <h3>Ваша хмара:</h3>
+            </div>
+            <div class="configuration-result-blocks">
+                <div class="configuration-result-block">
+                    <img src="images/Безымянный.png" alt="">
+                    <div class="conf-params">
+                        <p>Количество ядер частотой 2,6 ГГц: <input type='text' value='0'
+                                class="configuration-result-block__value">шт.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="configuration-result-block">
+                    <img src="images/Безымянный.png" alt="">
+                    <div class="conf-params">
+                        <p>Оперативная память: <input type='text' value='0' class="configuration-result-block__value">GB
+                        </p>
+                    </div>
+                </div>
+                <div class="configuration-result-block">
+                    <img src="images/Безымянный.png" alt="">
+                    <div class="conf-params">
+                        <p>Доступные для использования IPv4: <input type='text' value='0'
+                                class="configuration-result-block__value">шт.
+                        </p>
+                        <p>Количество "серых" сетей (VLAN): <input type='text' value='0'
+                                class="configuration-result-block__value">шт.
+                        </p>
+                    </div>
+                </div>
+                <div class="configuration-result-block">
+                    <img src="images/Безымянный.png" alt="">
+                    <div class="conf-params">
+                        <p>Silver (HDD 7K): <input type='text' value='0' class="configuration-result-block__value"> GB
+                        </p>
+                        <p>Gold (HDD 15K): <input type='text' value='0' class="configuration-result-block__value"> GB
+                        </p>
+                        <p>Platinum (NVMe SSD): <input type='text' value='0' class="configuration-result-block__value">
+                            GB</p>
+                    </div>
+                </div>
+                <div class=".configuration-result-block__value">
+                    <img src="images/Безымянный.png" alt="">
+                    <div class="conf-params">
+                        <p>RDS - количество: <input type='text' value='0' class="configuration-result-block__value"> шт.
+                        </p>
+                        <p>SQL Server Standard (core): <input type='text' value='0'
+                                class="configuration-result-block__value">шт.
+                        </p>
+                        <p>SQL Server Enterprise (core): <input type='text' value='0'
+                                class="configuration-result-block__value">шт.
+                        </p>
+                    </div>
+                </div>
+                <div class="configuration-result-block">
+                    <img src="images/Безымянный.png" alt="">
+                    <div class="conf-params">
+                        <p>BaaS (BackUp as a Service): <input type='text' value='0'
+                                class="configuration-result-block__value">GB</p>
+                        <p>Комплексное устройство защиты информации*: <span
+                                id="configuration-result-block__infosecure">Да</span> </p>
+                        <p>IT услуги**: <span id="configuration-result-block__itservice">Нет</span> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="configuration-result-short-desc">
+                <p>Для продовження замовлення ведіть ваші контактні дані нище і натисніть кнопку “замовити розрахунок”
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
